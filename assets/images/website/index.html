@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20200%20200%22%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22%23000%22/%3E%3Cg%20fill%3D%22%23C9CDD2%22%20stroke%3D%22%23C9CDD2%22%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%22100%22%20r%3D%2293%22%20fill%3D%22none%22%20stroke%3D%22%23C9CDD2%22%20stroke-width%3D%229%22/%3E%3Cpath%20fill%3D%22%23C9CDD2%22%20fill-rule%3D%22evenodd%22%20d%3D%22M100%2022A78%2078%200%201%200%20100.01%2022Z%20M54.971237060546876%20120.44973950195312V110.53865722656249L72.69395532226562%2071.01999999999998H82.94928173828126L84.36967846679688%2073.54064086914062L68.21538745117188%20109.45426049804686H82.69691772460938V92.85999999999999H94.79676293945313V128.98H82.69691772460938V120.44973950195312Z%20M105.20323706054688%2081.9514484863281V71.01999999999998H145.02876293945315V89.08256347656248L124.13813623046876%20128.98H113.31065722656251L111.870291015625%20126.45935913085937L132.9289177246094%2086.60186157226562V81.9514484863281Z%22/%3E%3C/g%3E%3C/svg%3E">
+<title>FF Tronics – Engineering and electronics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--line:#2a2d30;--silver:#c9cdd2;--hi:#dde0e4;--lo:#7d838a;--text:#b4b9bf;
+--metal:linear-gradient(100deg,#5c6269 0%,#dde0e4 30%,#8b9097 50%,#dde0e4 66%,#5c6269 100%);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:72px;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:#000;color:var(--text);font:400 17px/1.6 "Hanken Grotesk",system-ui,sans-serif}
+h1,h2,h3{font-family:Oxanium,"Segoe UI",sans-serif;color:var(--silver);margin:0;line-height:1.08}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--hi);outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(0,0,0,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;font:700 21px Oxanium,sans-serif;letter-spacing:.14em;color:var(--silver)}
+.logo svg{width:42px;height:42px}
+nav{display:flex;gap:30px;font-size:15px}
+nav a{text-decoration:none;color:var(--lo)}
+nav a:hover{color:var(--hi)}
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:40px;align-items:center;padding:72px 24px 88px;background:radial-gradient(ellipse at 78% 45%,#17191c 0%,#000 62%)}
+.hero h1{font-size:clamp(38px,6vw,76px);font-weight:700;background:var(--metal);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 3s ease-out both}
+@keyframes sheen{from{background-position:100% 0}to{background-position:0 0}}
+.hero p{max-width:50ch;font-size:19px;margin:26px 0 34px}
+.btn{display:inline-block;padding:14px 26px;margin:0 12px 12px 0;border:1px solid var(--silver);color:var(--silver);text-decoration:none;font:600 16px Oxanium,sans-serif;transition:background .2s,color .2s}
+.btn:hover{background:var(--silver);color:#000}
+.btn.solid{background:var(--metal);border-color:transparent;color:#000}
+.art{width:100%;height:auto;display:block}
+section{padding:84px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(30px,4.5vw,46px);margin-bottom:12px}
+.lead{max-width:56ch;margin:0 0 48px}
+.svc{display:grid;grid-template-columns:70px minmax(0,1fr) minmax(0,1.4fr);gap:12px 40px;padding:30px 20px;border-top:1px solid var(--line);transition:background .25s}
+.svc:last-child{border-bottom:1px solid var(--line)}
+.svc:hover{background:linear-gradient(90deg,#15171a,#000)}
+.num svg{width:44px;height:44px;display:block}
+.fm{display:flex;align-items:center;gap:10px}.fm svg{width:26px;height:26px}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px}.why h3{font-size:22px;margin-bottom:8px}.why p{margin:0}
+.svc h3{font-size:clamp(24px,3vw,32px)}
+.svc p{margin:0 0 12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.tags li{font-size:14px;color:var(--silver);border:1px solid var(--line);padding:3px 12px;border-radius:99px}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px}
+.how h3{font-size:22px;margin-bottom:8px}
+.how p{margin:0}
+.contact{background:#0b0c0d}
+.contact h2{font-size:clamp(34px,6vw,60px);max-width:16ch}
+.contact .btn{margin-top:24px}
+footer{padding:32px 0;border-top:1px solid var(--line);color:var(--lo);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:860px){nav{display:none}.hero{grid-template-columns:1fr;padding-top:48px}.svc{grid-template-columns:1fr;padding:28px 0}.num{padding:0}}
+@media(prefers-reduced-motion:reduce){.hero h1{animation:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top" aria-label="FF Tronics home"><svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="93" fill="none" stroke="currentColor" stroke-width="9"/><path fill="currentColor" fill-rule="evenodd" d="M100 22A78 78 0 1 0 100.01 22Z M54.971237060546876 120.44973950195312V110.53865722656249L72.69395532226562 71.01999999999998H82.94928173828126L84.36967846679688 73.54064086914062L68.21538745117188 109.45426049804686H82.69691772460938V92.85999999999999H94.79676293945313V128.98H82.69691772460938V120.44973950195312Z M105.20323706054688 81.9514484863281V71.01999999999998H145.02876293945315V89.08256347656248L124.13813623046876 128.98H113.31065722656251L111.870291015625 126.45935913085937L132.9289177246094 86.60186157226562V81.9514484863281Z"/></svg>FF TRONICS</a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<h1>Precision engineering, from firmware to flight.</h1>
+<p>FF Tronics designs and builds websites, embedded systems, medical devices, vehicle electronics and unmanned aerial systems. One team, one standard of quality.</p>
+<a class="btn solid" href="#contact">Start a project</a><a class="btn" href="#services">Our services</a>
+</div>
+<svg class="art" viewBox="-70 -70 340 340" role="img" aria-label="FF Tronics symbol: a silver core marked 47 with five segments for our services"><defs><linearGradient id="mg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="200" y2="200"><stop offset="0" stop-color="#5c6269"/><stop offset=".3" stop-color="#c9cdd2"/><stop offset=".5" stop-color="#8b9097"/><stop offset=".72" stop-color="#dde0e4"/><stop offset="1" stop-color="#6a7077"/></linearGradient></defs><circle cx="100" cy="100" r="112" fill="none" stroke="#14161a" stroke-width="1"/><circle cx="100" cy="100" r="128" fill="none" stroke="#14161a" stroke-width="1"/><circle cx="100" cy="100" r="144" fill="none" stroke="#14161a" stroke-width="1"/><circle cx="100" cy="100" r="160" fill="none" stroke="#14161a" stroke-width="1"/><circle cx="100" cy="100" r="176" fill="none" stroke="#14161a" stroke-width="1"/><circle cx="100" cy="100" r="192" fill="none" stroke="#14161a" stroke-width="1"/><circle cx="100" cy="100" r="94" fill="none" stroke="url(#mg)" stroke-width="4"/><circle cx="100" cy="100" r="41" fill="none" stroke="url(#mg)" stroke-width="1.6"/><path d="M55.19 25.43A87 87 0 0 1 144.81 25.43L125.24 58.00A49 49 0 0 0 74.76 58.00Z" fill="none" stroke="url(#mg)" stroke-width="2.6" stroke-linejoin="miter"/><path d="M100.00 69.00L100.00 51.00" stroke="url(#mg)" stroke-width="3.5"/><g transform="translate(100.00 32.00)"><path d="M0 -12L13 11L0 4L-13 11Z" fill="none" stroke="#C9CDD2" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter"/></g><path d="M157.08 34.34A87 87 0 0 1 184.77 119.57L147.74 111.02A49 49 0 0 0 132.15 63.02Z" fill="none" stroke="url(#mg)" stroke-width="2.6" stroke-linejoin="miter"/><path d="M129.48 90.42L146.60 84.86" stroke="url(#mg)" stroke-width="3.5"/><g transform="translate(164.67 78.99)"><path d="M-6 -9L-14 0L-6 9M6 -9L14 0L6 9M2 -12L-2 12" fill="none" stroke="#C9CDD2" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter"/></g><path d="M180.08 133.99A87 87 0 0 1 107.58 186.67L104.27 148.81A49 49 0 0 0 145.10 119.15Z" fill="none" stroke="url(#mg)" stroke-width="2.6" stroke-linejoin="miter"/><path d="M118.22 125.08L128.80 139.64" stroke="url(#mg)" stroke-width="3.5"/><g transform="translate(139.97 155.01)"><g fill="none" stroke="#C9CDD2" stroke-width="1.9" stroke-linecap="butt"><path d="M-5.4 -8V-14M-5.4 8V14M-8 -5.4H-14M8 -5.4H14"/><path d="M-1.8 -8V-14M-1.8 8V14M-8 -1.8H-14M8 -1.8H14"/><path d="M1.8 -8V-14M1.8 8V14M-8 1.8H-14M8 1.8H14"/><path d="M5.4 -8V-14M5.4 8V14M-8 5.4H-14M8 5.4H14"/><rect x="-8" y="-8" width="16" height="16" stroke-width="2.2"/></g><rect x="-3.8" y="-3.8" width="7.6" height="7.6" fill="#C9CDD2"/><circle cx="-5.2" cy="-5.2" r="1" fill="#C9CDD2"/></g><path d="M92.42 186.67A87 87 0 0 1 19.92 133.99L54.90 119.15A49 49 0 0 0 95.73 148.81Z" fill="none" stroke="url(#mg)" stroke-width="2.6" stroke-linejoin="miter"/><path d="M81.78 125.08L71.20 139.64" stroke="url(#mg)" stroke-width="3.5"/><g transform="translate(60.03 155.01)"><path d="M-15 0H-6L-2 -10L2 11L6 0H15" fill="none" stroke="#C9CDD2" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter"/></g><path d="M15.23 119.57A87 87 0 0 1 42.92 34.34L67.85 63.02A49 49 0 0 0 52.26 111.02Z" fill="none" stroke="url(#mg)" stroke-width="2.6" stroke-linejoin="miter"/><path d="M70.52 90.42L53.40 84.86" stroke="url(#mg)" stroke-width="3.5"/><g transform="translate(35.33 78.99)"><path fill="#C9CDD2" fill-rule="evenodd" d="M-2.00 -10.31 L-1.52 -14.42 L1.52 -14.42 L2.00 -10.31 L3.24 -9.99 L4.44 -9.52 L7.25 -12.56 L9.70 -10.78 L7.68 -7.16 L8.49 -6.17 L9.18 -5.09 L13.25 -5.90 L14.18 -3.01 L10.42 -1.28 L10.50 0.00 L10.42 1.28 L14.18 3.01 L13.25 5.90 L9.18 5.09 L8.49 6.17 L7.68 7.16 L9.70 10.78 L7.25 12.56 L4.44 9.52 L3.24 9.99 L2.00 10.31 L1.52 14.42 L-1.52 14.42 L-2.00 10.31 L-3.24 9.99 L-4.44 9.52 L-7.25 12.56 L-9.70 10.78 L-7.68 7.16 L-8.49 6.17 L-9.18 5.09 L-13.25 5.90 L-14.18 3.01 L-10.42 1.28 L-10.50 0.00 L-10.42 -1.28 L-14.18 -3.01 L-13.25 -5.90 L-9.18 -5.09 L-8.49 -6.17 L-7.68 -7.16 L-9.70 -10.78 L-7.25 -12.56 L-4.44 -9.52 L-3.24 -9.99Z M4.2 0A4.2 4.2 0 1 0 -4.2 0A4.2 4.2 0 1 0 4.2 0Z"/></g><path fill="url(#mg)" fill-rule="evenodd" d="M69 100A31 31 0 1 0 131 100A31 31 0 1 0 69 100Z M79.62984533691407 109.25107263183594V104.76748779296875L87.6472655029297 86.89H92.28657983398438L92.92914025878906 88.03028991699219L85.62124670410157 104.27692736816407H92.17241516113282V96.77H97.64615466308595V113.11H92.17241516113282V109.25107263183594Z M102.35384533691408 91.83517907714844V86.89H120.37015466308594V95.06115966796875L110.91963305664063 113.11H106.02148779296876L105.36989355468751 111.96971008300781L114.89641516113282 93.93893737792969V91.83517907714844Z"/></svg>
+</div>
+
+<section id="services"><div class="wrap">
+<h2>What we do</h2>
+<p class="lead">Five disciplines, one engineering team. Every project gets the same testing, documentation and care.</p>
+<article class="svc"><div class="num"><svg viewBox="-16 -16 32 32" aria-hidden="true"><path d="M-6 -9L-14 0L-6 9M6 -9L14 0L6 9M2 -12L-2 12" fill="none" stroke="#C9CDD2" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></div><h3>Web development</h3><div><p>Fast, secure websites and web apps that are easy to maintain, from company sites to dashboards and customer portals.</p><ul class="tags"><li>Websites</li><li>Web apps</li><li>APIs</li><li>Hosting</li></ul></div></article>
+<article class="svc"><div class="num"><svg viewBox="-16 -16 32 32" aria-hidden="true"><g fill="none" stroke="#C9CDD2" stroke-width="1.9" stroke-linecap="butt"><path d="M-5.4 -8V-14M-5.4 8V14M-8 -5.4H-14M8 -5.4H14"/><path d="M-1.8 -8V-14M-1.8 8V14M-8 -1.8H-14M8 -1.8H14"/><path d="M1.8 -8V-14M1.8 8V14M-8 1.8H-14M8 1.8H14"/><path d="M5.4 -8V-14M5.4 8V14M-8 5.4H-14M8 5.4H14"/><rect x="-8" y="-8" width="16" height="16" stroke-width="2.2"/></g><rect x="-3.8" y="-3.8" width="7.6" height="7.6" fill="#C9CDD2"/><circle cx="-5.2" cy="-5.2" r="1" fill="#C9CDD2"/></svg></div><h3>Embedded systems</h3><div><p>Firmware and hardware for connected devices. We design the board, write the code and test it against real conditions.</p><ul class="tags"><li>Firmware</li><li>PCB design</li><li>IoT</li><li>Prototyping</li></ul></div></article>
+<article class="svc"><div class="num"><svg viewBox="-16 -16 32 32" aria-hidden="true"><path d="M-15 0H-6L-2 -10L2 11L6 0H15" fill="none" stroke="#C9CDD2" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></div><h3>Biomedical engineering</h3><div><p>Medical and health devices built for accuracy and safety, with clear documentation from first sketch to final test.</p><ul class="tags"><li>Device design</li><li>Sensors</li><li>Equipment repair</li><li>Testing</li></ul></div></article>
+<article class="svc"><div class="num"><svg viewBox="-16 -16 32 32" aria-hidden="true"><path fill="#C9CDD2" fill-rule="evenodd" d="M-2.00 -10.31 L-1.52 -14.42 L1.52 -14.42 L2.00 -10.31 L3.24 -9.99 L4.44 -9.52 L7.25 -12.56 L9.70 -10.78 L7.68 -7.16 L8.49 -6.17 L9.18 -5.09 L13.25 -5.90 L14.18 -3.01 L10.42 -1.28 L10.50 0.00 L10.42 1.28 L14.18 3.01 L13.25 5.90 L9.18 5.09 L8.49 6.17 L7.68 7.16 L9.70 10.78 L7.25 12.56 L4.44 9.52 L3.24 9.99 L2.00 10.31 L1.52 14.42 L-1.52 14.42 L-2.00 10.31 L-3.24 9.99 L-4.44 9.52 L-7.25 12.56 L-9.70 10.78 L-7.68 7.16 L-8.49 6.17 L-9.18 5.09 L-13.25 5.90 L-14.18 3.01 L-10.42 1.28 L-10.50 0.00 L-10.42 -1.28 L-14.18 -3.01 L-13.25 -5.90 L-9.18 -5.09 L-8.49 -6.17 L-7.68 -7.16 L-9.70 -10.78 L-7.25 -12.56 L-4.44 -9.52 L-3.24 -9.99Z M4.2 0A4.2 4.2 0 1 0 -4.2 0A4.2 4.2 0 1 0 4.2 0Z"/></svg></div><h3>Automotive electronics</h3><div><p>Diagnostics, control units and in-vehicle electronics. We find faults, fix them and build the tools that prevent them.</p><ul class="tags"><li>Diagnostics</li><li>ECU work</li><li>Wiring</li><li>Telematics</li></ul></div></article>
+<article class="svc"><div class="num"><svg viewBox="-16 -16 32 32" aria-hidden="true"><path d="M0 -12L13 11L0 4L-13 11Z" fill="none" stroke="#C9CDD2" stroke-width="2.6" stroke-linecap="square" stroke-linejoin="miter"/></svg></div><h3>Unmanned aerial systems</h3><div><p>Drone design, flight controllers and payload integration for mapping, inspection, agriculture and security.</p><ul class="tags"><li>Airframes</li><li>Flight control</li><li>Payloads</li><li>Field testing</li></ul></div></article>
+</div></section>
+
+<section id="why"><div class="wrap">
+<h2>Why 47?</h2>
+<p class="lead">Silver is element 47. It is the best electrical conductor of any metal, and every service we offer depends on it.</p>
+<div class="why">
+<div><h3>It carries the signal</h3><p>Circuits, contacts and connectors rely on silver. Our software, embedded and aerial systems all end up running through it.</p></div>
+<div><h3>It protects</h3><p>Silver is naturally antimicrobial, which is why it is used in medical devices and equipment.</p></div>
+<div><h3>It lasts</h3><p>From vehicle electronics to drone avionics, silver keeps a connection reliable under heat, vibration and time.</p></div>
+</div>
+</div></section>
+
+<section id="approach"><div class="wrap">
+<h2>How we work</h2>
+<p class="lead">The same method applies whether the product is a web page or an aircraft.</p>
+<div class="how">
+<div><h3>Define</h3><p>We agree on the problem, the limits and what success looks like before any work starts.</p></div>
+<div><h3>Build</h3><p>Short build cycles, with working results you can see and test at every stage.</p></div>
+<div><h3>Verify</h3><p>Every product is tested against its real operating conditions and documented.</p></div>
+<div><h3>Support</h3><p>We stay on after delivery for updates, repairs and the next version.</p></div>
+</div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2>Tell us what you want to build.</h2>
+<p class="lead">Send a short description of your project. We reply within two working days.</p>
+<a class="btn solid" href="mailto:hello@fftronics.com">Email us</a><a class="btn" href="tel:+2340000000000">Call us</a>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span class="fm"><svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="93" fill="none" stroke="currentColor" stroke-width="9"/><path fill="currentColor" fill-rule="evenodd" d="M100 22A78 78 0 1 0 100.01 22Z M54.971237060546876 120.44973950195312V110.53865722656249L72.69395532226562 71.01999999999998H82.94928173828126L84.36967846679688 73.54064086914062L68.21538745117188 109.45426049804686H82.69691772460938V92.85999999999999H94.79676293945313V128.98H82.69691772460938V120.44973950195312Z M105.20323706054688 81.9514484863281V71.01999999999998H145.02876293945315V89.08256347656248L124.13813623046876 128.98H113.31065722656251L111.870291015625 126.45935913085937L132.9289177246094 86.60186157226562V81.9514484863281Z"/></svg>FF Tronics · © 2026 FF Tronics. All rights reserved.</span><span>Ibadan, Nigeria</span></div></footer>
+
+</body>
+</html>
