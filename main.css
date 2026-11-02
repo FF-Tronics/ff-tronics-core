@@ -1,1 +1,112 @@
 /* Styles */
+/* Colour tokens — override to re-skin the effect:
+   --ink    main text colour (defaults to currentColor)
+   --ink-2  primary accent   --ink-3  secondary accent */
+:root {
+    --ink: currentColor;
+    --ink-2: #DDE0E4;
+    --ink-3: #C9CDD2;
+}
+
+/* 06 Chromia — brushed-metal letters with a passing sheen */
+.brand-name {
+    font: 600 32px/1.1 "JetBrains Mono", monospace;
+    letter-spacing: .06em;
+    background: linear-gradient(105deg,
+            color-mix(in srgb, var(--ink) 40%, transparent) 0 38%,
+            var(--ink) 47%,
+            #C9CDD2 50%,
+            var(--ink) 53%,
+            color-mix(in srgb, var(--ink) 40%, transparent) 62% 100%) 0 0 / 260% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: brand-name 3s linear infinite;
+}
+
+@keyframes brand-name {
+    0% {
+        background-position: 130% 0;
+    }
+
+    60%,
+    100% {
+        background-position: -130% 0;
+    }
+}
+
+/* Colour tokens — override to re-skin the effect:
+   --ink    main text colour (defaults to currentColor)
+   --ink-2  primary accent   --ink-3  secondary accent */
+
+/* 03 Teletype — typewriter with blinking caret (word must match the ch width) */
+.fx-typewriter {
+    box-sizing: content-box;
+    /* the caret sits outside the character-count width */
+    /* font: 600 24px/1.2 "JetBrains Mono", monospace; */
+    letter-spacing: 0;
+    /* color: var(--ink); */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 48ch;
+    /* = number of characters typed */
+    border-right: .55ch solid var(--ink-2);
+    animation: fx-type 3.6s steps(48) 1,
+        fx-caret .65s steps(1) infinite;
+}
+
+@keyframes fx-type {
+
+    0%,
+    8% {
+        width: 0;
+    }
+
+    55%,
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes fx-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+/* 03 Teletype — typewriter with blinking caret (word must match the ch width) */
+.fx-typewriter {
+    box-sizing: content-box;
+    /* the caret sits outside the character-count width */
+    /* font: 600 24px/1.2 "JetBrains Mono", monospace; */
+    letter-spacing: 0;
+    /* color: var(--ink); */
+    white-space: wrap;
+    height: max-content;
+    overflow: hidden;
+    width: 48ch;
+    /* = number of characters typed */
+    border-right: .55ch solid var(--ink-2);
+    animation: fx-type 3.6s steps(48) 1,
+        fx-caret .65s steps(1) infinite;
+}
+
+@keyframes fx-type {
+
+    0%,
+    8% {
+        width: 0;
+    }
+
+    55%,
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes fx-caret {
+    50% {
+        border-color: transparent;
+    }
+}

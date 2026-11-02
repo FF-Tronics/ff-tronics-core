@@ -7,6 +7,7 @@
     <title>FF Tronics Inc</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="shortcut icon" href="assets/images/logo/small-mark/small-mark-silver.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,7 +17,7 @@
 </head>
 
 <body class="w-full min-h-dvh bg-black min-[1020px]:flex justify-center text-white">
-
+    <!-- <div class="fx-typewriter fx-typewriter-once">HELLO CSS</div> -->
     <section class="content w-full min-h-full min-[1020px]:flex flex-col items-center">
         <!-- Header section -->
         <header
@@ -24,11 +25,13 @@
             <div class="min-[1020px]:w-5/6 flex justify-between items-center">
                 <div class="brand flex gap-[1.5em] items-center h-full min-[320px]:w-full flex-1">
                     <div class="brand-logo w-[3em] h-[3em] ">
-                        <img class="logo w-full h-full" src="assets/images/logo/small-mark/small-mark-silver.svg"
-                            alt="">
+                        <img class="logo w-full h-full animate__animated animate__bounce"
+                            src="assets/images/logo/small-mark/small-mark-silver.svg" alt="">
                     </div>
                     <div class="brand-name h-full flex items-center">
-                        <p class="text-2xl font-[Oxanium] tracking-[0.12em] uppercase font-bold text-[#C9CDD2]">FF
+                        <p
+                            class="text-2xl font-[Oxanium] tracking-[0.12em] uppercase font-bold text-[#C9CDD2] animate__animated animate__fadeIn">
+                            FF
                             Tronics
                         </p>
                     </div>
@@ -51,12 +54,13 @@
         <section
             class="hero-section px-[0.3rem]  min-[1020px]:w-5/6 mb-[2em] min-[1020px] min-[1020px]:flex gap-[2em] justify-between items-center w-full ">
             <div class="hero-text mb-[2em]">
-                <h1 class="mb-[0.5em] font-[Oxanium] min-[1020px]:text-5xl text-4xl font-bold text-[#C9CDD2]">
-                    Precision engineering, from firmware to flight.
+                <h1
+                    class="fx-typewriter fx-typewriter hero-header h-[160px] mb-[0.5em] font-[Oxanium] min-[1020px]:text-5xl text-4xl font-bold text-[#C9CDD2]">
                 </h1>
 
                 <p class="text-[#DDE0E4] font-[Hanken Grotesk] text-xl mb-[1em]">
-                    FF Tronics designs and builds websites, embedded systems, medical devices, vehicle electronics and
+                    FF Tronics designs and builds websites, embedded systems, medical devices, vehicle electronics
+                    and
                     unmanned aerial systems. One team, one standard of quality.
                 </p>
                 <div class="hero-buttons h-[3em] flex gap-[1em] font-[Oxanium] font-bold">
@@ -81,19 +85,20 @@
 
         <!-- Services section -->
         <section
-            class="services py-[3em] px-[0.3rem] border-y border-[#6A7077] min-[1020px]:flex flex-col items-center justify-center">
+            class="services py-[3em] px-[0.3rem] border-y border-[#6A7077] min-[1020px]:flex flex-col items-center justify-center animate__animated animate__fadeInUp">
             <div class="min-[1020px]:w-5/6">
                 <div class="mb-[2em]">
                     <h2 class="text-3xl font-[Oxanium] font-bold text-[#C9CDD2]">What we do</h2>
                     <p class="text-lg text-[#DDE0E4] font-[Hanken Grotesk]">
-                        Five disciplines, one engineering team. Every project gets the same testing, documentation and
+                        Five disciplines, one engineering team. Every project gets the same testing, documentation
+                        and
                         care.
                     </p>
                 </div>
 
                 <!-- Web development services -->
                 <div
-                    class="discipline py-[2em] gap-[1em] justify-between items-center min-[1020px]:flex border-t border-[#6A7077]">
+                    class="discipline py-[2em] px-[1em] gap-[1em] justify-between items-center min-[1020px]:flex border-t border-[#6A7077]">
                     <div class="service-image-icon w-[70px] w-[70px] mb-[1em] min-[1020px]:mb-[0]">
                         <img src="assets/images/icons/icon-software-silver.png" class="w-full h-full" alt="" srcset="">
                     </div>
@@ -123,7 +128,7 @@
 
                 <!-- Biomedical engineering services -->
                 <div
-                    class="discipline py-[2em] justify-between items-center min-[1020px]:w-full gap-[1em] min-[1020px]:flex border-t border-[#6A7077]">
+                    class="discipline py-[2em] px-[1em] justify-between items-center min-[1020px]:w-full gap-[1em] min-[1020px]:flex border-t border-[#6A7077]">
                     <div class="service-image-icon w-[70px] w-[70px] mb-[1em] min-[1020px]:mb-[0]">
                         <img src="assets/images/icons/icon-biomedical-silver.png" class="w-full h-full" alt=""
                             srcset="">
@@ -154,7 +159,7 @@
 
                 <!-- Embedded systems services -->
                 <div
-                    class="discipline py-[2em] min-[1020px]:w-full gap-[1em] justify-between items-center min-[1020px]:flex border-t border-[#6A7077]">
+                    class="discipline py-[2em] px-[1em] min-[1020px]:w-full gap-[1em] justify-between items-center min-[1020px]:flex border-t border-[#6A7077]">
                     <div class="service-image-icon w-[70px] w-[70px] mb-[1em] min-[1020px]:mb-[0]">
                         <img src="assets/images/icons/icon-embedded-silver.png" class="w-full h-full" alt="" srcset="">
                     </div>
@@ -163,7 +168,8 @@
                     </h2>
                     <div class=" min-[1020px]:w-2/5">
                         <p class="text-lg text-[#DDE0E4] min-[1020px]:mb-[1em] font-[Hanken Grotesk] w-full">
-                            Firmware and hardware for connected devices. We design the board, write the code and test it
+                            Firmware and hardware for connected devices. We design the board, write the code and
+                            test it
                             against real conditions.
                         </p>
 
@@ -182,7 +188,7 @@
 
                 <!-- Automotive services -->
                 <div
-                    class="discipline min-[1020px]:w-full gap-[1em] py-[2em] justify-between items-center min-[1020px]:flex border-t border-[#6A7077]">
+                    class="discipline min-[1020px]:w-full gap-[1em] py-[2em] px-[1em] justify-between items-center min-[1020px]:flex border-t border-[#6A7077]">
                     <div class="service-image-icon w-[70px] w-[70px] mb-[1em] min-[1020px]:mb-[0]">
                         <img src="assets/images/icons/icon-automotive-silver.png" class="w-full h-full" alt=""
                             srcset="">
@@ -192,7 +198,8 @@
                     </h2>
                     <div class=" min-[1020px]:w-2/5">
                         <p class="text-lg text-[#DDE0E4] min-[1020px]:mb-[1em] font-[Hanken Grotesk] w-full">
-                            Diagnostics, control units and in-vehicle electronics. We find faults, fix them and build
+                            Diagnostics, control units and in-vehicle electronics. We find faults, fix them and
+                            build
                             the
                             tools that prevent them.
                         </p>
@@ -200,7 +207,8 @@
                         <div class="w-full">
                             <button
                                 class="border border-[#2A2D30] text-[#B4B9BF] p-[5px] w-[6em] rounded-4xl">Diagnostics</button>
-                            <button class="border border-[#2A2D30] text-[#B4B9BF] p-[5px] rounded-4xl">ECU work</button>
+                            <button class="border border-[#2A2D30] text-[#B4B9BF] p-[5px] rounded-4xl">ECU
+                                work</button>
                             <button
                                 class="border border-[#2A2D30] text-[#B4B9BF] p-[5px] w-[6em] rounded-4xl">Wiring</button>
                             <button
@@ -211,7 +219,7 @@
 
                 <!-- UAS services -->
                 <div
-                    class="discipline py-[2em] min-[1020px]:w-full gap-[1em] justify-between items-center min-[1020px]:flex border-t border-[#6A7077]">
+                    class="discipline py-[2em] px-[1em] min-[1020px]:w-full gap-[1em] justify-between items-center min-[1020px]:flex border-t border-[#6A7077]">
                     <div class="service-image-icon w-[70px] w-[70px] mb-[1em] min-[1020px]:mb-[0]">
                         <img src="assets/images/icons/icon-uav-silver.png" class="w-full h-full" alt="" srcset="">
                     </div>
@@ -243,7 +251,7 @@
 
         <!-- Approach section -->
         <div id="approach"></div>
-        <section class="py-[3em] px-[0.3rem] min-[1020px]:w-5/6">
+        <section class="py-[3em] px-[1em] min-[1020px]:w-5/6 animate__animated animate__fadeInUp">
             <div class="mb-[2em]">
                 <h2 class="text-3xl font-[Oxanium] font-bold text-[#C9CDD2]">How we work</h2>
                 <p class="text-lg text-[#DDE0E4] font-[Hanken Grotesk]">
@@ -254,7 +262,8 @@
             <div class="steps min-[530px]:grid min-[1020px]:flex justify-between gap-[1em] grid-cols-2">
                 <div class="step mb-[1em]">
                     <h2 class="text-2xl text-[#C9CDD2] font-[Oxanium] font-bold">Define</h2>
-                    <p class="text-[#DDE0E4] text-lg">We agree on the problem, the limits and what success looks like
+                    <p class="text-[#DDE0E4] text-lg">We agree on the problem, the limits and what success looks
+                        like
                         before any
                         work starts.</p>
                 </div>
@@ -268,13 +277,13 @@
                 <div class="step mb-[1em]">
                     <h2 class="text-2xl text-[#C9CDD2] font-[Oxanium] font-bold">Verify</h2>
                     <p class="text-[#DDE0E4] text-lg">Every product is tested against its real operating
-                        conditions and documented..</p>
+                        conditions and documented.</p>
                 </div>
                 <div class="steps">
                     <div class="step mb-[1em]">
                         <h2 class="text-2xl text-[#C9CDD2] font-[Oxanium] font-bold">Support</h2>
                         <p class="text-[#DDE0E4] text-lg">We stay on after delivery for updates, repairs and the
-                            next version..</p>
+                            next version.</p>
                     </div>
                 </div>
             </div>
@@ -283,10 +292,11 @@
         <!-- Contact section -->
         <div id="contact"></div>
         <section
-            class="py-[3em] px-[0.3rem] min-[1020px]:w-full min-[1020px]:flex justify-center items-center border-y border-[#DDE0E4] bg-[#0B0C0D]">
+            class="py-[3em] px-[1em] min-[1020px]:w-full min-[1020px]:flex justify-center items-center border-y border-[#DDE0E4] bg-[#0B0C0D] animate__animated animate__fadeInUp">
             <div class="min-[1020px]:w-5/6">
                 <div class="mb-[2em]">
-                    <h2 class="text-3xl font-[Oxanium] font-bold text-[#C9CDD2]">Tell us what you want to build.</h2>
+                    <h2 class="text-3xl font-[Oxanium] font-bold text-[#C9CDD2]">Tell us what you want to build.
+                    </h2>
                     <p class="text-lg text-[#DDE0E4] font-[Hanken Grotesk]">
                         Send a short description of your project. We reply within two working days.
                     </p>
@@ -344,25 +354,18 @@
                         </small>
                     </div>
                 </div>
-                <div class="location font-[Hanken Grotesk] text-[#C9CDD2]">
+                <div class="location font-[Hanken Grotesk] text-[#C9CDD2] flex justify-center items-center">
                     <p>Ibadan, Nigeria</p>
                 </div>
             </div>
         </footer>
+        <div class="version flex justify-center items-center text-[#C9CDD2]">
+            <small>
+                v 1.0.0
+            </small>
+        </div>
     </section>
     <script src="main.js"></script>
 </body>
 
 </html>
-
-<!-- 
-
-            
-        </footer>
--->
-
-
-
-<!-- 
-From Mr. Kayode, 
--->
